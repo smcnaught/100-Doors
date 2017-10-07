@@ -1,0 +1,51 @@
+<!DOCTYPE = html>
+<html>
+
+<head>
+    <title>100 Doors</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Linking source CSS File. -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Linking source JavaScript File. -->
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>100 Doors Challenge</h1>
+        <p>Challenge from <a href="http://rosettacode.org">Rosetta Code</a></p>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Info</h2>
+            <p>There are 100 doors in a row that are all initially closed. You make 100 passes by the doors. The first time
+                through, visit every door and toggle the door (if the door is closed, open it; if it is open, close it).
+                The second time, only visit every 2nd door (door #2, #4, #6, ...), and toggle it. The third time, visit every
+                3rd door (door #3, #6, #9, ...), etc, until you only visit the 100th door.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Challenge</h2>
+            <p>Answer the question: what state are the doors in after the last pass? Which are open, which are closed?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Answer</h2>
+            <p><strong>Doors Open: </strong><span id="openDoors"></span></p>
+            <p><strong>Doors Closed: </strong><span id="closedDoors"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
