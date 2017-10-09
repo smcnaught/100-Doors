@@ -55,6 +55,11 @@ $(document).ready(function () {
         }
     };
 
+    $('.showHide').click(function (e) {
+        e.preventDefault();
+        $('#solution').toggle();
+    });
+
     doorStatusFunc();
     loop100Times();
     toggleDoors();

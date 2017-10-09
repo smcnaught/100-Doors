@@ -1,5 +1,6 @@
 <!DOCTYPE = html>
 <html>
+
 <head>
     <title>100 Doors</title>
     <!-- Latest compiled and minified CSS -->
@@ -17,6 +18,7 @@
     <!-- Linking source JavaScript File. -->
     <script src="logic.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="jumbotron">
@@ -41,10 +43,15 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2>Answer</h2>
-                <p><strong>Doors Open: </strong><span id="openDoors"></span></p>
-                <p><strong>Doors Closed: </strong><span id="closedDoors"></span></p>
+                <button class="btn showHide">Show Solution</button>
+                <hr>
+                <div id="solution" style="display: none;">
+                    <p><strong>Doors Open: </strong><span id="openDoors"></span></p>
+                    <p><strong>Doors Closed: </strong><span id="closedDoors"></span></p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
